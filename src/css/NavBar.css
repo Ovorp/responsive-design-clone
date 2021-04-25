@@ -1,0 +1,54 @@
+nav {
+  box-sizing: border-box;
+  background-color: #212529;
+  height: 72px;
+  width: 100vw;
+  padding: 16px;
+  position: fixed;
+  top: 0;
+  transition: height 1s;
+}
+
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+h1 {
+  height: 24px;
+}
+
+nav h1 img {
+  height: 100%;
+}
+
+nav button {
+  color: white;
+  background-color: #fed136;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 12px;
+  border: none;
+  border-radius: 4px;
+  padding: 10px;
+  display: flex;
+}
+
+.hamburger {
+  background-color: white;
+  height: 2px;
+  width: 15px;
+  margin: 2px 2px 0 4px;
+}
+
+.menu {
+  background-color: #212529;
+}
+
+.nav-bar-links {
+  display: ;
+}
+.hide {
+  display: none;
+}

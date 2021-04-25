@@ -1,0 +1,16 @@
+main {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.welcome {
+  padding: 168px 0 96px 0;
+  height: 254px;
+  color: white;
+  background-image: url('./header-bg.jpg');
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
