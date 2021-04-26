@@ -1,16 +1,21 @@
-main {
+body {
   font-family: 'Montserrat', sans-serif;
 }
 
 .welcome {
-  padding: 168px 0 96px 0;
-  height: 254px;
+  /* padding: 168px 0 96px 0; */
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
   color: white;
-  background-image: url('./header-bg.jpg');
-  background-position: center;
+  background: url('./header-bg.jpg') no-repeat center center;
   background-size: cover;
+  overflow: hidden;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+}
+
+@media (min-width: 990px) {
 }

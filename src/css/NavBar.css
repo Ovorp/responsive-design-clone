@@ -6,7 +6,13 @@ nav {
   padding: 16px;
   position: fixed;
   top: 0;
-  transition: height 1s;
+  transition: height 0.2s linear;
+  overflow: hidden;
+}
+
+nav.expand {
+  height: 172px;
+  transition: height 0.2s linear;
 }
 
 .header {
@@ -38,17 +44,56 @@ nav button {
 .hamburger {
   background-color: white;
   height: 2px;
-  width: 15px;
-  margin: 2px 2px 0 4px;
+  width: 10px;
+  margin: 2.5px 2px 0 5px;
 }
 
 .menu {
   background-color: #212529;
+  margin-top: 20px;
+  font-size: 15px;
 }
 
-.nav-bar-links {
-  display: ;
-}
-.hide {
-  display: none;
+@media (min-width: 990px) {
+  nav {
+    background-color: transparent;
+    height: 94px;
+    padding: 24px 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .header {
+    height: fit-content;
+  }
+
+  nav h1 img {
+    height: 160%;
+    width: auto;
+    margin-left: 60px;
+  }
+
+  nav button {
+    display: none;
+  }
+
+  .menu {
+    background-color: transparent;
+  }
+
+  .menu ul {
+    display: flex;
+    margin-right: 60px;
+  }
+
+  li {
+    margin: 0 10px;
+    font-size: 1rem;
+    letter-spacing: 0.1rem;
+  }
+
+  li:hover {
+    color: #fed136;
+  }
 }

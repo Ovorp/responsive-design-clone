@@ -15,13 +15,14 @@ export default class NavBar extends Component {
     const navBarLinks = ['SERVICES', 'PORTFOLIO', 'ABOUT', 'TEAM', 'CONTACT'];
 
     return (
-      <nav>
+      <nav className={this.state.showDropMenu ? 'expand' : ''}>
         <div className="header">
           <h1>
             <img src={navBarLogo} alt="logo" />
           </h1>
 
           <button
+            className="menuBTN"
             onClick={() =>
               this.setState({ showDropMenu: !this.state.showDropMenu })
             }
@@ -35,7 +36,7 @@ export default class NavBar extends Component {
           </button>
         </div>
         <div className="menu">
-          <ul className={this.state.showDropMenu ? 'nav-bar-links' : 'hide'}>
+          <ul>
             {navBarLinks.map((val) => (
               <li key={val}>{val}</li>
             ))}
