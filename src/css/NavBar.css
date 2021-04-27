@@ -3,16 +3,18 @@ nav {
   background-color: #212529;
   height: 72px;
   width: 100vw;
-  padding: 16px;
+  padding: 16px 20px;
   position: fixed;
   top: 0;
   transition: height 0.2s linear;
   overflow: hidden;
+  z-index: 2;
 }
 
 nav.expand {
-  height: 172px;
+  height: 240px;
   transition: height 0.2s linear;
+  z-index: 2;
 }
 
 .header {
@@ -20,6 +22,7 @@ nav.expand {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  z-index: 2;
 }
 
 h1 {
@@ -52,6 +55,10 @@ nav button {
   background-color: #212529;
   margin-top: 20px;
   font-size: 15px;
+}
+
+li {
+  margin-top: 20px;
 }
 
 @media (min-width: 990px) {

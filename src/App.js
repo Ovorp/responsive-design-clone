@@ -8,9 +8,11 @@ export default class App extends Component {
       <div className="App">
         <div className="welcome">
           <NavBar />
-          <h1>Welcome To Our Studio!</h1>
-          <h2>IT'S NICE TO MEET YOU</h2>
-          <button>TELL ME MORE</button>
+          <div className="hero">
+            <h2>Welcome To Our Studio!</h2>
+            <h3>IT'S NICE TO MEET YOU</h3>
+            <button className="tellBTN">TELL ME MORE</button>
+          </div>
         </div>
       </div>
     );
